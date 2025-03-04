@@ -1,6 +1,8 @@
 # Bose-161-Speaker-French-Cleat-Mount
 Bose 161 Speaker French Cleat Mount implemented in OpenSCAD, with STLs.
 
+![completeMount](./animation.gif)
+
 ** The mount has not yet been printing or tested - I will update the project after printing and modifying if needed **
 
 Edit the Bose161WallMount.scad file to tweak the parameters that generate the speaker mount and the wall mount.
