@@ -8,7 +8,7 @@ module Bose161WallMount (
     // Set the variables below to get everything just right, hermano.
     // The generated models are in the recommended orientation for printing.
     
-    recommendedPrintOrientation=true,
+    recommendedPrintOrientation=false,
     
     // verticleMount=true will design the mount to hang the speaker tall-ways (up and down).
     verticalMount = false,
