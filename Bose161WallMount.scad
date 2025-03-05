@@ -8,7 +8,7 @@ module Bose161WallMount (
     // Set the variables below to get everything just right, hermano.
     // The generated models are in the recommended orientation for printing.
     
-    recommendedPrintOrientation=false,
+    recommendedPrintOrientation=true,
     
     // verticleMount=true will design the mount to hang the speaker tall-ways (up and down).
     verticalMount = false,
@@ -22,9 +22,9 @@ module Bose161WallMount (
     // If calculateAngle=true, the below values will calculate the angle at which the speaker will point
     calculateAngle = false,
     // Below values can be mm, inches, feet, w/e. As long as they're all the same units. No negatives, silly billy.
-    speakerMountHeightFromFloor = 78,
-    listenerEarsHeightFromFloor = 28,
-    listenerEarsDistanceFromSpeakerWall = 120
+    speakerMountHeightFromFloor = 90,
+    listenerEarsHeightFromFloor = 41,
+    listenerEarsDistanceFromSpeakerWall = 163
     
     // That's it, really.
 ) {
@@ -34,6 +34,8 @@ module Bose161WallMount (
     cleatThick = 20;
     
     calculatedAngle = bitOTrig(speakerMountHeightFromFloor, listenerEarsHeightFromFloor, listenerEarsDistanceFromSpeakerWall);
+    
+    echo(calculatedAngle);
     
     rotate([0, recommendedPrintOrientation?90:0, 0])
     translate([recommendedPrintOrientation?-mountWidth:0, 0, 0])

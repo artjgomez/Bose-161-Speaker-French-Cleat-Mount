@@ -56,6 +56,7 @@ module speakerRearProfile() {
     // To calculate the radius of the arc on the back of the speaker:
     // I measured an arc length of 72 mm and a chord length of 69.2 mm.
     // The calculated radius is 73.66 mm. And the central angle is 56.033 degrees.
+    // The chord length was too short to fit the speaker IRL so I raised it to 73.3 mm which results in a central angle of 59.6412 degrees
     
     width=300;
     
@@ -77,8 +78,8 @@ module speakerRearProfile() {
 }
 
 module halfSpeakerRearProfile() {
-    a=8.63204;
-    b=34.6;
+    a=9.7;
+    b=36.6;
     R=73.66;
     A=[a, b];
     B=[R,0];
